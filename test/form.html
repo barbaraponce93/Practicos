@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            background-color: coral;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <form action="#" method="get" enctype="text/plain" name="form_alumno">
+        <h2>Formulario de Incripción</h2>
+        <label for="apellido">Apellido</label> <!-- vincula la etiqueta con el input a traves del id (sirve por ej para que al hacer click en la etiqueta tambien sea recibida la accion)-->
+        <input type="text" name="ape_alumno" id="apellido" size="20" maxlength="20"><!-- size: tamaño fisico del text- maxlength=la cantidad que permite-->
+        <br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre_alumno" id="nombre" size="30" maxlength="30">
+        <br>
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad_alumno" id="edad" min="18" max="90">
+        <br>
+        <label for="ciudad">Ciudad de residencia:</label>
+        <input type="text" name="ciudad_residencia" id="ciudad" value="San Rafael">
+        <br>
+        <label for=""></label>
+
+        <input type="submit" value="Enviar Datos">
+
+
+
+    </form>
+</body>
+</html>

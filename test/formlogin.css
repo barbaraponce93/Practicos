@@ -1,0 +1,123 @@
+.taza {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    margin: auto;
+    translate: -10px 40px;
+    justify-content: center;
+
+}
+
+.caja1 {
+    border-style: outset;
+    width: 280px;
+    height: 330px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(#333, #000)
+
+}
+.nombre_usuario {
+    
+    border: 2px black;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    translate: 0px 80px;
+
+}
+input[type="text"] {
+    width: 230px;
+    height: 30px; 
+    border-radius: 8px;
+}
+input[type="password"] {
+    width: 230px; 
+    height: 30px; 
+    border-radius: 8px;
+}
+
+
+
+.contraseña {
+    border: 2px black;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    translate: 0px 90px;
+
+}
+
+#login {
+    width: 70px;
+    height: 35px;
+    display: flex;
+    font: bold;
+    justify-content: center;
+    translate: 188px 47px;
+    background-color: #78757c;
+    border-radius: 5px;
+
+}
+#check1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: white;
+    display: inline-block;
+    translate:27px 65px  ;
+
+}
+
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    translate:25px 65px  ;
+    width: 33px;
+    height: 17px;
+
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 11px;
+    left: 5px;
+    
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #78757c;
+}
+
+
+input:checked+.slider:before {
+    transform: translateX(13px);
+}

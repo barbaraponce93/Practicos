@@ -1,0 +1,40 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    }
+    .violeta{
+        
+        width: 50px;
+        height: 50px;
+        background-color: blueviolet;
+        color:white;
+        border-radius: 50%;
+        display: inline-block;
+        text-align:  center;
+        justify-content: center;
+      
+       
+    }
+    .gris{
+        color:rgb(206, 203, 203);
+    }
+    img{
+        border-radius: 50%;
+    }
+    p {
+        font-weight:bolder;
+        display: inline-block; /* Hace que el párrafo aparezca en línea */
+        margin-bottom: 0;
+    }
+    .negro{
+        font-weight: normal;
+        margin-top: 0; /* Elimina el margen superior del párrafo */
+        margin-bottom: 10px; 
+    
+    }
+    .imgperfil{
+        width:50px;
+         height:50px; 
+         border-radius:50%;
+
+    }

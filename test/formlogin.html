@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formlogin.css">
+    <script>
+        function chequear(user, pass) {
+            //usuario=pepe pass=123
+            if (user === "pepe" && pass == "123") {
+                alert('Acceso Exitoso');
+
+            } else {
+                alert('Acceso Denegado');
+            }
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <form class="login-form"
+        onsubmit="event.preventDefault(); chequear(this.nombre_usuario.value, this.password.value)">
+
+        <div class="caja1">
+
+            <div class="taza">
+                <img src="img/taza8.png" alt="">
+
+            </div>
+
+            <label class="nombre_usuario">
+                <input type="text" name="nombre_usuario" id="usuario" placeholder=" &#128100; Usuario">
+                <br>
+                <br>
+            </label>
+            <label for="Password" class="contraseña">
+                <input type="password" name="password" id="pass" placeholder=" &#128274; Password">
+
+            </label>
+            <br>
+            <br>
+
+            <label class="toggle-switch">
+
+
+                <input type="checkbox">
+
+                <div class="slider"></div>
+
+
+            </label>
+            <label for="check" id="check1">STAY LOGGED IN</label>
+
+
+            <input type="submit" value="LOGIN" id="login">
+
+            </label>
+
+
+
+        </div>
+
+
+
+    </form>
+
+
+
+</body>
+
+</html>

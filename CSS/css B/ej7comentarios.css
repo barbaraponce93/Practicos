@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.circulo {
+
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    translate: 20px 60px;
+
+
+
+}
+
+#letra {
+
+    margin-left: 20px;
+    margin-bottom: 50px;
+
+}
+
+#tiempo {
+    color: rgb(175, 173, 173);
+    font-size: 12px;
+
+}
+
+.nombre {
+    font-size:14px;
+    font-weight: bolder;
+    margin-left: 80px;
+    margin-bottom: 3px;
+
+}
+
+.comentario {
+    margin-left: 80px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.respuesta {
+    
+    margin-top: 0px;
+    margin-left: 80px;
+    color: rgb(175, 173, 173);
+    font-size: 14px;
+
+
+}
+
+#me-encanta {
+    translate: 10px 10px;
+}
+
+.deslizable {
+    font-weight: bolder;
+    margin-left: 80px;
+}
+
+#foto-perfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    translate: 20px 60px;
+}

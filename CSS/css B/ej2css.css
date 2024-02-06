@@ -1,0 +1,18 @@
+
+  
+
+  img{
+    width: 400px;
+    height: 400px;
+}
+div{
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width:850px) {
+    div{
+        display:flex;
+        flex-direction: column;
+    }
+    
+}
