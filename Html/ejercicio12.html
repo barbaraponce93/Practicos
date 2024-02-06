@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 12.- Realice una tabla que tenga nombres de provincias, nombres y cantidad de habitantes
+de algunas de sus ciudades, y habitantes totales de la provincia. Analice combinar celdas.//-->
+    <h1>Provincias y Ciudades</h1>
+
+    <table>
+        <tr>
+            <th>Provincia</th>
+            <th>Ciudad</th>
+            <th>Habitantes</th>
+        </tr>
+        <tr>
+            <td rowspan="3">San Juan</td>
+            <td>Rivadavia</td>
+            <td>83000</td>
+        </tr>
+        <tr>
+            <td>Rawson</td>
+            <td>114000</td>
+        </tr>
+
+        <tr>
+            <td >Total Habitantes de la provincia</td>
+            <td>822853</td>
+        </tr>
+
+        
+        <tr>
+
+            <td rowspan="4">Córdoba</td>
+            <td>Villa Carlos Paz</td>
+            <td>96000</td>
+
+        </tr>
+        <tr>
+            <td>Alta Gracia</td>
+            <td>67000</td>
+        </tr>
+        <tr>
+            <td>Río Cuarto</td>
+            <td>292.293</td>
+        </tr>
+
+
+        <tr>
+            <td>Total Habitantes de la provincia</td>
+            <td>3.840.905</td>
+        </tr>
+
+    </table>
+
+
+</body>
+
+</html>
