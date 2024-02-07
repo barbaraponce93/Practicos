@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<script>
+    var suma= 0;
+    var numero;
+    do {
+        numero = prompt("Ingrese el numeros, hasta -1 para finalizar");
+        numero = parseInt(numero);
+
+
+        if (!isNaN(numero)) {
+
+            
+            suma = numero + suma ;
+        }
+        else {
+            console.log("Por favor, ingrese un número válido.");
+        }
+
+
+    } while (numero !== -1);
+    console.log("La suma de los números ingresados es " + ""+(suma +1));
+</script>
+
+<body>
+
+</body>
+
+</html>
