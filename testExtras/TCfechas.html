@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+var fecha=new Date(1991, 10 , 23);//año/mes/dia los meses se cuenta partir del 0 en este caso seria Noviembre
+var fechaCadena=new Date("02/25/2023")// en cadena mes/dia/año en este caso el conteo es normal en este caso seria febrero
+
+// funciones especiales.
+var dia=fecha.getDate();//devuelve el dia del mes 
+var mes=fecha.getMonth();//devuelve el mes (ojo! cuenta desde 0)
+var anio=fecha.getFullYear();//devuelve el año  
+var diaDeLaSemana=fecha.getDay();//devuelve el dia dela semana(ojo! cuenta desde 0)
+var hora=fecha.getHours();//devuelve las horas (de 0 a 23)
+var min=fecha.getMinutes();//devuelve min (de 0 a 59)
+var seg=fecha.getSeconds();//devuelve los segundos (de 0 a 59)
+alert("Dia: "+dia +" "+ " Mes "+(mes+1)+ " Año: "+ anio)
+
+
+
+
+//INGRESAR UNA FECHA POR PROMT EN FOTMATO MM/DD/YYYY,
+ //LUEGO MOSTRAR MEDIANTE ALERT A QUE DIA DE LA SEMANA CORRESPONDE (PALABRA)
+var fechaIngreso=prompt("Ingrese una fecha en formato ", "mm/dd/yyyy");
+var fechafinal= new Date(fechaIngreso)//fecha ingreso es un String lo tenemos que transformar a un tipo date pasandola por este constructor de fecha
+var dia=fechafinal.getDay();
+var diaSemana;
+
+switch(dia){
+case 0:
+    diaSemana="Domingo";
+    break;
+case 1:
+    diaSemana="Lunes";
+    break;
+case 2:
+    diaSemana="Martes";
+    break;
+case 3:
+    diaSemana="Miercoles";
+    break;
+case 4:
+    diaSemana="Jueves";
+    break;
+case 5:
+    diaSemana="Viernes";
+    break;
+case 6:
+    diaSemana="Sabado";
+    break;
+
+}
+alert("El dia de la semana de esa fecha es: "+ diaSemana)
+
+
+    </Script>
+</body>
+</html>
