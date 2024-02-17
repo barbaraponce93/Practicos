@@ -4,8 +4,8 @@ ventana dice “el número es Mayor” o “el número es Menor” y se pide un 
 hasta que el usuario lo acierta. En ese momento una ventana lo felicita y muestra el número
 de intentos que ha realizado hasta el acierto.*/
 
-var numSecreto = Math.floor(Math.random() * 1000000) + 1;
-var numUsuario = 0;
+var numSecreto = Math.floor(Math.random() * 10) + 1;
+var numUsuario = 0 ;
 var contador = 0;
 do {
     var numUsuario = parseInt(prompt('Ingrese un número para adivinar', 'Entre 1 y 1.000.000'));
@@ -16,6 +16,7 @@ do {
     } else if (numSecreto < numUsuario) {
         alert('El número es menor');
     } 
+
     contador++;
 
 } while (numSecreto !== numUsuario) {
