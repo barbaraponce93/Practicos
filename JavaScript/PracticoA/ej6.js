@@ -6,22 +6,19 @@ var texto = prompt('Ingrese un texto');
 var arrayPalabras = texto.split(' ');//se utiliza para dividir una cadena en un array de subcadenas basándose en un delimitador especificado ej una ,
                                     //split es una funcion de String
 
-var numPalabras = arrayPalabras.length;
-console.log("Número de palabras:", numPalabras);
 
-var primerPalabra = arrayPalabras[0]; 
-console.log("Primer palabra:", primerPalabra);
+console.log("Número de palabras:", arrayPalabras.length);
+
+var primerPalabra =; 
+console.log("Primer palabra:", arrayPalabras[0]);
 
 var ultimaPalabra = arrayPalabras[arrayPalabras.length - 1]
+
 console.log("Ultima palabra:", ultimaPalabra);
 
-var inverso = arrayPalabras.reverse();
-console.log('Palabras en orden inverso: ', inverso)
+console.log('Palabras en orden inverso: ',arrayPalabras.reverse())
 
+console.log("Orden a-z:",sort() );// mal , supongo hay que clonar el array
 
-var AZ = arrayPalabras.sort();
-console.log("Orden a-z:", AZ);
-
-var ZA = arrayPalabras.sort().reverse();
-console.log("Orden z-a:", ZA);
+console.log("Orden z-a:", arrayPalabras.sort().reverse() );
 

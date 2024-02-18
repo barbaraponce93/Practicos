@@ -5,8 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio9</title>
     <script src="ej9.js"></script>
+    <style>
+        *{
+            background-color: rgb(145, 222, 138);
+
+            
+        }
+    .container{
+        width: 80%;
+        height: 80%;
+        padding: 20px;
+        display: flex;
+        flex-flow: column;
+        margin: 0 auto;
+      
+
+    }
+        .input{
+            display: flex;
+            width: 200px;
+            height: 25px;
+        
+        }
+        table {
+            
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+
+        }
+        th, td {
+            border: 1px solid #6e6c6cb8;
+            text-align: left;
+            padding: 8px;
+        }
+        .form{
+            font-family: 'Courier New', Courier, monospace;
+            
+            margin: 0 auto;
+            width: 50%;
+            border: 1px solid #6e6c6cb8;
+            display: flex;
+            flex-flow: column;
+           align-items: center;
+           padding-bottom: 30px;
+           
+        
+        
+        
+        }
+    </style>
 </head>
 <body>
+    <!-- Realice una página que permita cargar los datos de una persona en un array. Luego la
+página deberá mostrar en una tabla html con las cabeceras adecuadas los datos solicitados.
+nombre completo, edad, dni, provincia, localidad-->
+<div class="container">
+
+    <div>
+<table id="tablaDatos">
+    <thead>
+    <tr>
+        <th>Nombre Completo</th>
+        <th>Dni</th>
+        <th>Edad</th>
+        <th>Ciudad de Residencia</th>
+      </tr>
+</thead>
+<tbody>
+ <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+
+<div class="form">
+<h1>Ingreso de datos</h1>
+
+<form id="datosPersonales">
+
+<label for="nCompleto">Nombre Completo:</label> <!-- vincula la etiqueta con el input a traves del id (sirve por ej para que al hacer click en la etiqueta tambien sea recibida la accion)-->
+<input type="text" name="nombreCompleto" id="nCompleto" class="input" required> <!-- size: tamaño fisico del text- maxlength=la cantidad que permite-->
+<br>
+<label for="dni">DNI:</label>
+<input type="text" name="documento" id="dni" size="8" maxlength="8" class="input" required><!--required: es un atributo de validacion ( indica que un campo debe ser completado antes de que el formulario pueda ser enviado)-->
+<br>
+<label for="edad">Edad:</label>
+<input type="number" name="edad" id="edad" min="0" max="100" class="input" required>
+<br>
+<label for="ciudad">Ciudad de residencia:</label>
+<input type="text" name="ciudad_residencia" id="ciudad" class="input" required>
+<br>
+<button type="button" onclick="agregarPersona()">Agregar Persona</button>
+</form>
+</div>
+</div>
+
+<script src="ej9.js"></script>
     
 </body>
 </html>
