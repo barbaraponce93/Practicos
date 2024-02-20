@@ -10,25 +10,19 @@ function agregarPersona() {
     var edad = document.getElementById('edad').value;
     var ciudad = document.getElementById('ciudad').value;
 
-    if (!isNaN(nombre) ) { 
+    if (!isNaN(nombre) ) {                          // Validaciones 
         alert('Por favor, ingrese un nombre válido.');
         return; 
     }
 
-
  
-    if (isNaN(dni) || parseInt(dni) <= 0 ) { // Validación específica para la dni
+    if (isNaN(dni) || parseInt(dni) <= 0 ) { 
         alert('Por favor, ingresa una número válido.');
         return; 
     }
 
 
-    if (isNaN(edad) || parseInt(edad) <= 0 || parseInt(edad) > 120) { 
-        alert('Por favor, ingresa una edad válida.');
-        return; 
-    }
-
-   persona = [ // guardamos en el array
+   persona = [ // guardamos los datos en el array
         nombre,
         dni,
         edad,

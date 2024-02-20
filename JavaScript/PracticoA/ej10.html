@@ -9,16 +9,27 @@
 <body>
       <!-- 10) Realice una página que permita cargar una fecha en el formato DD-MM-YYYY y diga
 cuántos días faltan o ya pasaron respecto del día de hoy. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio10</title>
+</head>
+<body>
+    <!-- 10) Realice una página que permita cargar una fecha en el formato DD-MM-YYYY y diga
+cuántos días faltan o ya pasaron respecto del día de hoy. -->
+
+<label>Ingrese la fecha con formato "DD-MM-YYYY"</label>
+<input id="fecha" type="text">
+<input type="button" name="btn" class="btn" id="btn" value="calcular">
+
+<div>
+    <p>Los dias son:</p><p id="resultado"></p>
+</div>
+
+<script src="ej10.js"></script>
 
 
-<form action="#" method="get" enctype="text/plain" name="formulario">
-    <label id="fechaIngresada" for="">Ingrese la fecha</label><input type="date">
-    <input type="button" name="btn" class="btn" id="btn" value="calcular">
-    </form>
-    <div>
-        <p>Los dias son:</p><p id="resultado"></p>
-    </div>
-    
-    <script src="ejercicio10.js"></script>
 </body>
 </html>

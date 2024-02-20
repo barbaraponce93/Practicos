@@ -7,7 +7,18 @@
    <script src="tCcondicionale.js"></script>
 </head>
 <body>
-   <P>Probando restas en la consola</P>
-
+   <script>
+   var dia = 30;
+   var mes = 1; // Febrero (0-indexado)
+   var year = 2023;
+   
+   var fecha = new Date(year, mes, dia);
+   
+   console.log(fecha); // Esto mostrará el 2 de marzo de 2023
+   
+   console.log(fecha.getDate() === dia); // Esto será falso, porque getDate() devolverá 2 en lugar de 30
+   console.log(fecha.getMonth() === mes); // Esto será falso, porque getMonth() devolverá 1 en lugar de 0
+   console.log(fecha.getFullYear() === year); // Esto será verdadero
+</script>
 </body>
 </html>
