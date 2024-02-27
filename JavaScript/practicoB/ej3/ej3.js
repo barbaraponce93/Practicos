@@ -14,9 +14,8 @@ function funciondevalidacion() {
         return false;
     }
 
-    // verificamos la edad
     let testedad = /^[0-9]{1}[0-9]{1}$/
-    if (!testedad.test(edad) || edad>30 || edad<18 || edad==""){
+    if (!testedad.test(edad) || edad>30 || edad<18 || edad==""){ // verificamos la edad
         alert("Ingrese una edad que este comprendida entre 18 y 30");
         document.getElementById('edad').value = ""
         document.getElementById("edad").focus();

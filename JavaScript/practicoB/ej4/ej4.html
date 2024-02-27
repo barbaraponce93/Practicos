@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio4</title>
+</head>
+
+<body>
+    <footer>Ejercicio4</footer>
+    <section>
+        <h1>Ingrese el nombre del Álbum</h1>
+        <form id="albumForm">
+            <label for="nombreÁlbum">Nombre del Album</label>
+            <input type="text" id="nombrealbum" name="albumName">
+            <br>
+            <label for="numCanciones">Cantidad de canciones</label>
+            <input type="text" id="numCanciones" name="numCanciones">
+            <br>
+            <button type="button" id="primerBoton">Ingresar canciones</button>
+        </form>
+
+        <form id="temaForm" class="hidden">
+            <h2>Ingrese las canciones con su respectiva duración del álbum ingresado</h2>
+            <div id="ingresartemas">
+                <!--  mediante DOM vamos ingresar HTML y campos -->
+            </div>
+            <button type="button" id="boton2">Guardar</button>
+        </form>
+
+        <div id="listaCargada">
+            <!-- vamos a cargar la listas de canciones -->
+        </div>
+    </section>
+    <footer></footer>
+
+    <script src="ej4.js">
+
+
+    </script>
+</body>
+
+</html>

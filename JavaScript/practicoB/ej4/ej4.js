@@ -1,59 +1,86 @@
-/*4) Realice un formulario para la carga de datos de un CD. Realice las validaciones
-correspondientes. Por medio de un botón agregar canción se debe habilitar una línea nueva
-para cargar la canción (nombre, compositor, duración).*/
+
+const boton1 = document.getElementById('primerBoton');
+boton1.addEventListener('click', cargarSegundoFormulario)
+
+function cargarSegundoFormulario() {
 
 
+    // necesito crear campos segun la cantidad de canciones que se tenga por eso voy a necesitar un for y rescatar las variables
+    var numCanciones = parseInt(document.getElementById('numCanciones').value);
+if ( isNaN(numCanciones) || numCanciones <= 0 || numCanciones === '') {
+    alert('Ingrese un número válido de canciones para el álbum');
+    document.getElementById('numCanciones').value = "";
+    document.getElementById('numCanciones').focus();
+    return false;
+}
 
 
+    // voy a crear tantos elementos como numero de canciones
+    for (let i = 0; i < numCanciones; i++) {
+        var inputCreado = document.createElement('input');
+        inputCreado.type = 'text';
+        inputCreado.name = 'nombreDeLaCancion' + (i + 1);
+        inputCreado.placeholder = 'Nombre de la Canción ' + (i + 1); // ingresa un texto fantasma
+
+        var inputDeLaDuracion = document.createElement('input')
+        inputDeLaDuracion.type = 'text';
+        inputDeLaDuracion.name = 'duracionDeLaCancion' + (i + 1);
+        inputDeLaDuracion.placeholder = 'Duracion de la Canción ' + (i + 1);
+
+        // Una vez creado los elementos, acedo mi div vacío
+        var elDivVacio = document.getElementById('ingresartemas');
+        // songInputsDiv.innerHTML = '';
+        elDivVacio.appendChild(inputCreado);
+        elDivVacio.appendChild(inputDeLaDuracion);
+        elDivVacio.appendChild(document.createElement('br'));
 
 
-  function validaciones(){
-  
-
-    var nom= document.getElementById('nombre').value;
-    var cantante = document.getElementById('compositor').value;
-    var tiempo = document.getElementById('duracion').value;
-    var album= document.getElementById('album').value;
-   
-    var cantCanciones = document.getElementById('cantCanciones').value;
-
-    if (nom=='') {                          // Validaciones 
-        alert('Por favor, ingrese un nombre');
-        return false; 
     }
-    if (cantante=='' || !/^[a-zA-Z\s]*$/.test(cantante)) {                         
-        alert('Por favor, ingrese el compositor (solo letras)');
-        return false; 
-    }
-    if (isNaN(tiempo)||tiempo==''  ) {                         
-        alert('Por favor, ingrese la duracion');
-        return false; 
-    }
-    if (album=='') {                        
-      alert('Por favor, ingrese el nombre del álbum');
-      return false; 
-  }
- 
-  if (isNaN(cantCanciones)||cantCanciones==''  ) {                         
-      alert('Por favor, ingrese la cantidad de canciones que tiene el album');
-      return false; 
-  }
+    document.getElementById('temaForm').classList.remove('hidden');
+}
+
+const guardar = document.getElementById('boton2');
+guardar.addEventListener('click', crearlista)
+
+function crearlista() {
+
     
 
 
-     alert('Canción cargada correctamente');
-    return true;
+
+    var coleccionDeCanciones = document.getElementById('ingresartemas').getElementsByTagName('input'); // aca mejor debe ser un querryall pero no lo se bien (mejorar)
+    for (let i = 0; i < coleccionDeCanciones.length; i += 2) {
+
+        var duracion = coleccionDeCanciones[i + 1].value
+        let testtime = /^[0-5]?[0-9]:[0-5][0-9]$/;
+        if(!testtime.test(duracion) || duracion === ''){
+            alert('Ingrese el tiempo con el formato 00:00')
+            return false
+        }
+
+        var nombreDeLaCac = coleccionDeCanciones[i].value;
+
+        if(nombreDeLaCac === ''){
+            alert('Ingrese el nombre de la canción')
+            return false
+        }
+
+    }
    
+   
+   
+    var listaCargada = document.getElementById('listaCargada');
+    listaCargada.innerHTML = '<h2>Canciones:</h2>';
+    // console.log(coleccionDeCanciones);
 
-  }
+    var albumName = document.getElementById('nombrealbum').value;
 
-  function habilitarCancion() {// cuando se hace click en agregar cancion esta funcion activa los campos para cargar los datos
-    var cancion= document.getElementById('datos');
-    cancion.style.display = 'block';
+    for (let i = 0; i < coleccionDeCanciones.length; i += 2) {
+        var nombreDeLaCac = coleccionDeCanciones[i].value;
+        var duracion = coleccionDeCanciones[i + 1].value;
+        // Agregamos un elemento <p> al div vacío
+        listaCargada.innerHTML += '<p>Nombre: ' + nombreDeLaCac + ', Duración: ' + duracion + ', álbum: ' + albumName + '</p>';
+    }
+    document.getElementById('temaForm').classList.add('hidden'); // Oculta el formulario después de mostrar la lista
+}
 
-  }
-
-  
-
-
- 
