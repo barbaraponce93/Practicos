@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirección a Google</title>
+    <script>
+        /* Realice una página que luego de 2 segundos de haberse cargado se dirija hacia la
+página https://www.google.com.ar*/
+
+
+       
+        function redirigirAGoogle() {
+            setTimeout(function() {
+                window.location.href = "https://www.google.com.ar";
+            }, 2000); // 2000 milisegundos = 2 segundos
+        }
+
+        // Llamar a la función al cargar la página
+        window.onload = redirigirAGoogle;
+    </script>
+</head>
+<body>
+    <p>Esta página se redirigirá a <a href="https://www.google.com.ar">Google</a> después de 2 segundos.</p>
+</body>
+</html>

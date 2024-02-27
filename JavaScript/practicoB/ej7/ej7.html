@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ej7.css">
+</head>
+
+<body>
+    <!-- 7) Realiza una página que muestre un formulario para la conversión de Pesos a Dólares y
+viceversa. Los campos del formulario han de poder ser limpiados. -->
+
+<div class="contenedor">
+    <form name="formulario" method="post">
+        <div class="datos">
+            <label for="pesos">Colocar el monto</label>
+            <input type="text" id="monto">
+            <button id="borrar"  type="limpiar" onclick="Limpiar()">Borrar</button>
+        </div>
+        <div class="datos">
+            <p>El monto ingresado es en:</p>
+            <input type="radio" id="dolares" value="d" name="radio">
+            <label class="tipo" for="dolares">Dólares</label><br>
+            <input type="radio" id="pesos" value="p" name="radio">
+            <label class="tipo" for="pesos">Pesos argentinos</label>
+        </div>
+        <button class="boton" type="button" onclick="convertidor()">Convertir</button>
+      
+        <p id="mensaje">Esperando que ingrese los datos....</p>
+
+    </form>
+</div>
+    <script src="ej7.js"> </script>
+</body>
+
+</html>

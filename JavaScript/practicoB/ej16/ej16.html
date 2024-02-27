@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ej16.css">
+</head>
+
+<body>
+    <h2 id="titulo">Tabla de Países</h2>
+    <div id="tablaContainer" class="modelo1">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>País</th>
+                    <th>Capital</th>
+                    <th>Población</th>
+                    <th>Idioma</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Estados Unidos</td>
+                    <td>Washington, D.C.</td>
+                    <td>331 millones</td>
+                    <td>Inglés</td>
+                </tr>
+                <tr>
+                    <td>Brasil</td>
+                    <td>Brasilia</td>
+                    <td>213 millones</td>
+                    <td>Portugués</td>
+                </tr>
+                <tr>
+                    <td>India</td>
+                    <td>Nueva Delhi</td>
+                    <td>1380 millones</td>
+                    <td>Hindi e Inglés</td>
+                </tr>
+                <tr>
+                    <td>China</td>
+                    <td>Pekín</td>
+                    <td>1440 millones</td>
+                    <td>Mandarín</td>
+                </tr>
+                <tr>
+                    <td>Sudáfrica</td>
+                    <td>Pretoria</td>
+                    <td>59 millones</td>
+                    <td>Afrikáans, Inglés, otros</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <button id="boton" onclick="cambiarEstilo()">Cambiar estilo de tabla</button>
+
+    <script>
+   
+   var Modelo1 = true; 
+
+function cambiarEstilo() {
+    var tablaContainer = document.getElementById('tablaContainer');
+
+    if (Modelo1) {//si la variabl tiene el estado en true,  saca el modelo1  y agrega el modelo2
+       
+        tablaContainer.classList.remove('modelo1');
+        tablaContainer.classList.add('modelo2');
+    } else {
+       
+
+        tablaContainer.classList.remove('modelo2');
+        tablaContainer.classList.add('modelo1');
+    }
+
+    Modelo1 = !Modelo1; // Cambia el estado para que si se vuelve a presionar entre al else y cambie el modelo2 por el 1
+}
+
+     
+    </script>
+</body>
+
+</html>

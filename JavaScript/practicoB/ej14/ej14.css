@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(150deg, #d83e74, #3080a5);/*fondo degradado*/
+    height: 100vh;/*vh en relacion al alto de la ventana*/
+}
+
+.contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+/*  ARRIBA: Centra el contenedor en el centro de la pantalla horizontal y verticalmente.*/
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+
+}
+.contenedor h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver; /* linea gris del usuario y contra*/ 
+
+}
+.contenedor form{
+    padding: 0 40px;
+    box-sizing: border-box;/*border-box: Hace que el relleno no afecte al ancho total del formulario.*/
+}
+form .caja{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin:30px 0; 
+}
+
+.caja input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;/*Elimina el borde del campo de entrada.*/
+  
+
+
+}
+
+.caja label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;/*: Hace que la etiqueta no responda a eventos del puntero, permitiendo que los eventos pasen a través de ella.*/
+    transition: .5s;/*Aplica una transición a los cambios en la etiqueta.*/
+
+}
+
+
+
+.inicio input{
+    width: 100%;
+    height: 50px;
+    border: 1 px solid;
+    background:  #970f3f;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;/*Cambia el cursor a una mano cuando se coloca sobre el campo */
+    margin-bottom: 30px;
+}
+
+
+.caja input:focus-visible ~ label{
+    top: -10px;/*desplaza la etiqueta hacia arriba */
+    color: #970f3f;
+}
+
+.inicio input:hover{/*leve movimiento cuando el ouse pasa por encima*/
+    border-color:  #970f3f;
+
+}

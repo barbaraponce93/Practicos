@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <link rel="stylesheet" href="ej5.css">
+
+</head>
+
+
+
+<body>
+    <!--Realice una página donde el usuario pueda cargar un contacto. El contacto de esa
+persona debe tener al menos un teléfono y como máximo 3. Además debe ser obligatoria la
+carga del mail. Realice las validaciones necesarias.-->
+    <div class="contenedor">
+        <h1>Formulario de Contacto</h1>
+        
+            <form action="#" onsubmit="return validarFormulario()" method="post">
+          <div class="datos">      
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" >
+        </div>
+        <div class="datos">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" >
+        </div>
+        <div class="datos">
+            <label for="telefono1">Teléfono 1:</label>
+            <input type="tel" id="telefono1" name="telefono1" >
+
+            <label for="telefono2">Teléfono 2:</label>
+            <input type="tel" id="telefono2" name="telefono2" >
+
+            <label for="telefono3">Teléfono 3:</label>
+            <input type="tel" id="telefono3" name="telefono3" >
+        </div>
+        <button id="boton" type="submit">Guardar Contacto</button>
+
+        <p id="resp"></p>
+       
+
+        </form>
+    </div>
+    <Script src="ej5.js"></Script>
+</body>
+
+</html>

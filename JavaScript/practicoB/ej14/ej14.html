@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ej14.css">
+</head>
+
+<body>
+    <!-- 14) Realice un formulario que disponga de dos cajas de texto para verificar usuario y
+password. El usuario debe comenzar con una letra mayúscula y tener al menos 3 números
+en cualquier posición. El password debe tener una longitud mínima de 8 caracteres,
+comenzar con un número y terminar con una letra mayúscula seguida de otro número.-->
+    <div class="contenedor">
+        <h1>Inicio de Sesion</h1>
+        <form name="miFormulario" onsubmit="return validarIngreso()" method="post">
+
+            <div class="caja">
+
+                <input type="text" id="usuario">
+                <label>Nombre de Usuario</label>
+
+            </div>
+            <div class="caja">
+
+                <input type="password" id="contraseña">
+                <label>Contraseña</label>
+            </div>
+            <div class="inicio">
+                <input type="submit" name="botonEnviar" value="Ingresar">
+            </div>
+
+
+
+
+
+        </form>
+    </div>
+
+    <script src="ej14.js"></script>
+
+</body>
+
+</html>

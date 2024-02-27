@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(150deg, #e26f62, #82a530);
+    /*fondo degradado*/
+    height: 100vh;
+    /*vh en relacion al alto de la ventana*/
+}
+
+.modelo1 {
+    width: 30%;
+    border: 1px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: rgb(160, 101, 188);
+    margin-bottom: 40px;
+}
+
+th,
+td {
+    border: 3px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+
+.modelo2 {
+    width: 30%;
+    border: 4px ridge peru;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: rgb(150, 125, 111);
+
+}
+
+#boton {
+    width: 20%;
+    height: 40px;
+    background: #adadad;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bolder;
+    color: black;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    bottom: 60px;
+   right: 80px;
+}
+
+#titulo {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}

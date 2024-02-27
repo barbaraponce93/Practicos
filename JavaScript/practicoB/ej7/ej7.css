@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(150deg, #7e817e, #c3c3c6);
+    /*fondo degradado*/
+    height: 100vh;
+    /*vh en relacion al alto de la ventana*/
+}
+
+
+.contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: rgb(87, 100, 192);
+    border-radius: 5px;
+}
+
+.contenedor form {
+    padding: 0 40px;
+    box-sizing: border-box;
+    /*border-box: Hace que el relleno no afecte al ancho total del formulario.*/
+}
+
+form .datos {
+    position: relative;
+    margin: 10px 0;
+
+}
+
+.datos input {
+    width: 120px;
+    height: 20px;
+    font-size: 16px;
+
+}
+
+.tipo {
+
+    margin-left: -50px;
+
+}
+
+.boton {
+   
+    top: 50%;
+    left: 50%;
+    transform: translate(100%, 80%);
+    
+    width: 90px;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 18px;
+    background: #4a7d58;
+    color: rgb(255, 255, 255);
+    /*Cambia el cursor a una mano cuando se coloca sobre el campo */
+    margin-bottom: 30px;
+}
+
+#borrar {
+    margin-left: 10px;
+    background: #88938b;
+    cursor: pointer;
+
+}

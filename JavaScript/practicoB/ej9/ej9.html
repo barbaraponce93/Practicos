@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio9</title>
+    <link rel="stylesheet" href="ej9.css">
+</head>
+
+<body>
+    <!-- 9) Realiza una página que efectúe 3 preguntas de evaluación donde el usuario seleccione a
+través de radio button su respuesta. La página proporcionará la evaluación y las respuestas
+correctas a petición del usuario. -->
+<div class="contenedor">
+    <header>
+        <h1>Bienvenido, usted será evaluado para el préstamo bancario</h1>
+    </header>
+    <section>
+        <hr>
+        <p>Pregunta 1: Seleccione desde cuándo es cliente del banco</p>
+        <div>
+            <input type="radio" id="opcionA" value="" name="question1"><label for="opcionA">menos de 5 años</label><br>
+            <input type="radio" id="opcionB" value="" name="question1"><label for="opcionB">entre 5 a 10 años</label><br>
+            <input type="radio" id="opcionC" value="" name="question1"><label for="opcionC">entre 10 a 20 años</label><br>
+            <input type="radio" id="opcionD" value="" name="question1"><label for="opcionD">mas de 20 años</label><br>
+        </div>
+        <hr>
+        <p>Pregunta 2: En algún momento de su vida a sido moroso o entrado en el Veraz</p>
+        <div>
+            <input type="radio" id="opcionSI" value="" name="question2"><label for="opcionSI">Si</label><br>
+            <input type="radio" id="opcionNO" value="" name="question2"><label for="opcionNO">No</label><br>
+        </div>
+        <hr>
+        <p>Pregunta 3: Actualmente tiene prestamos no saldados con otras entidades bancarias o financieras</p>
+        <div>
+            <input type="radio" id="opcionYes" value="" name="question3"><label for="opcionYes">Si</label><br>
+            <input type="radio" id="opcionNOo" value="" name="question3"><label for="opcionNOo">No</label><br>
+        </div>
+        <br>
+        <hr>
+        <button type="button" onclick="check()" >Revisar</button>
+    </section>
+
+</div>
+
+    <script src="ej9.js"> </script>
+
+
+</body>
+
+</html>

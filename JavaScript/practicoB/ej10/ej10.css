@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #1a1a1c;
+    display: grid;
+    place-items: center;
+  
+}
+.calculadora {
+    background-color: #0c0c0c;
+    color: white;
+    width: 350px;
+    max-width: 100%;
+   
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);/* crea una cuadrícula con 4 columnas, 1fr especifica que cada columna tendrá un tamaño igual a una fracción del espacio disponible.*/
+    gap: .5rem;/*display: grid;, gap establecerá el espacio entre las filas y las columnas en tu cuadrícula.*/
+    /*rem: representa el tamaño de la fuente del elemento raíz (<html>) ej: si  font-size: 16px; en la etiqueta <html>, entonces 1rem será igual a 16px.*/
+}
+
+.pantalla{
+    grid-column: 1/-1;
+    background-color: #4d4d57;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align:right;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+
+}
+.btn{
+    background-color: #15173c ;
+    color: white;
+   border: 1;
+   padding: 1.5rem .5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: .5rem;
+   cursor: pointer;/*la manito al señalar un boton*/
+  
+
+}
+.btn:hover{
+    background-color: #090c31;/*camboa de color al pasar por encima*/
+
+}
+#cero{
+   grid-column: span 2;   /* el boton del cero se estira al tamaño de dos columnas */
+}
+
+#igual{
+    grid-row: span 2;
+    background-color: rgb(155, 13, 13);
+}
+
+#igual:hover{
+    background-color: rgb(248, 4, 4);
+}

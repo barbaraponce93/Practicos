@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+    <link rel="stylesheet" href="ej3.css">
+</head>
+
+<body>
+    <!-- 3) Realizar un formulario donde: la longitud del nombre sea mayor de cuatro caracteres. El
+nombre sólo debe contener caracteres del alfabeto español (no contiene números ni
+caracteres no alfanuméricos). La edad sólo debe contener números y estar comprendido
+entre 18 y 30. La dirección de correo debe incluir una arroba y su longitud sea superior a
+cinco caracteres. -->
+
+<div class="contenedor">
+    <form name="registroForm" action="#" onsubmit="return funciondevalidacion()" method="post">
+        <div class="datos">
+            <p>Complete con sus Datos</p>
+            <label for="nombre">Ingrese su nombre:</label>
+            <input type="text" id="nombre">
+        </div>
+        <div class="datos">
+            <label for="edad">Ingrese su edad:</label>
+            <input type="text" id="edad" name="edad">
+        </div>
+        <div class="datos">
+            <label for="email">Correo Electrónico:</label>
+            <input type="text" id="email" name="email">
+        </div>
+        <button id="boton" type="submit">Enviar</button>
+    </form>
+</div>
+
+    <script src="ej3.js">
+       
+    </script>
+</body>
+
+</html>
